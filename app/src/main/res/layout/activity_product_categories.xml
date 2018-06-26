@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.benbrenkman.homeconstruction.ProductCategories">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:layout_scrollFlags="scroll|enterAlways"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/category_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabMode="scrollable"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/carpentry_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carpentry" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/plumbing_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plumbing" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/electrical_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Electrical" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/decor_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decor" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tool_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tools" />
+
+            <android.support.design.widget.TabItem
+                android:id="@+id/tiling_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiling" />
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <include
+            layout="@layout/content_product_categories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
