@@ -96,4 +96,10 @@
     <string name="title_activity_products">Products</string>
     <string name="title_activity_product_category">ProductCategory</string>
     <string name="title_activity_product_categories">ProductCategories</string>
+    <string name="decor">Decor</string>
+    <string name="carpentry">Carpentry</string>
+    <string name="electric">Electrical</string>
+    <string name="tiling">Tiling</string>
+    <string name="plumbing">Plumbing</string>
+    <string name="tool">Tools</string>
 </resources>
